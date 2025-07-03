@@ -11,7 +11,10 @@ const app = express();
 // ✅ Middleware
 app.use(
   cors({
-  origin: "http://localhost:3000",  // Must be your frontend origin
+  origin: [
+      "http://localhost:3000",
+      "https://smart-frontend-three.vercel.app",
+    ],  // Must be your frontend origin
   credentials: true
 })
 );
