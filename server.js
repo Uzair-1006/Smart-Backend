@@ -11,14 +11,15 @@ const app = express();
 // ✅ Middleware
 app.use(
   cors({
-  origin: [
+    origin: [
       "http://localhost:3000",
       "https://smart-frontend-three.vercel.app",
-      "https://smart-frontend-k6r60g6v6-uzair-1006s-projects.vercel.app/",
-    ],  // Must be your frontend origin
-  credentials: true
-})
+      "https://smart-frontend-k6r60g6v6-uzair-1006s-projects.vercel.app" // <-- removed trailing slash
+    ],
+    credentials: true,
+  })
 );
+
 app.use(express.json());
 app.use(cookieParser());
 
