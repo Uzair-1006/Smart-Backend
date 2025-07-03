@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { adminLogin } = require("../controllers/adminController");
-const adminAuthMiddleware = require("../middleware/adminAuthMiddleware");
+const adminAuthMiddleware = require("../middleware/adminauthMiddleware");
 const User = require("../models/User");
 const Product = require("../models/Product"); // Add this near top with other imports
 const Order = require("../models/Order");
