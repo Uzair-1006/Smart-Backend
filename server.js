@@ -14,7 +14,8 @@ app.use(
     origin: [
       "http://localhost:3000",
       "https://smart-frontend-three.vercel.app",
-      "https://smart-frontend-k6r60g6v6-uzair-1006s-projects.vercel.app" // <-- removed trailing slash
+      "https://smart-frontend-k6r60g6v6-uzair-1006s-projects.vercel.app" ,
+      ""
     ],
     credentials: true,
   })
